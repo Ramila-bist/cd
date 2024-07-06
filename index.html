@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "open sans", sans-serif;
+            background: whitesmoke;
+        }
+
+        .con {
+            width: 1000px;
+            margin: auto;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .left {
+            flex-wrap: warp;
+            width: 50%;
+            padding-top: 25vh;        }
+
+        .left h2 {
+            font-size: 55px;
+            color: blue;
+        }
+
+        .left p {
+            font-size: 26px;
+            line-height: 1.4;
+        }
+
+        .right {
+            background: white;
+            margin-top: 18vh;
+            height: 350px;
+            width: 40%;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 8px 0 grey;
+        }
+
+        .form input {
+            width: 100%;
+            height: 50px;
+            margin: 5px 0;
+            padding-left: 20px;
+            border-radius: 5px;
+            border: 1px solid grey;
+            font-size: 20px;
+        }
+        .form input, ::placeholder{color: rgb(173, 171, 171); font-size: 16px;}
+
+        .btn {
+            background: blue;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            text-align: center;
+            border-radius: 5px;
+            height: 50px;
+            font-size: 20px;
+            border: 0;
+        }
+
+        .right p {
+            text-align: center;
+            color: blue;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background: lightgray;
+        }
+
+        .bt {
+            background: green;
+            color: white;
+            margin-top: 20px;
+            margin-left: 50px;
+            width: 70%;
+            text-align: center;
+            border-radius: 5px;
+            height: 50px;
+            font-size: 16px;
+            border: 0;
+        }
+        .pa{
+            font-size: 14px;
+            margin-top: 55px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="fbpage">
+        <div class="con flex">
+            <div class="left">
+                <h2>facebook</h2>
+                <p>Connect with friends and the world around you on Facebook.</p>
+            </div>
+            <div class="right">
+                <form action="" class="form">
+                    <input type="text" name="name" placeholder="Email or Phone number">
+                    <input type="password" name="name" placeholder="Password">
+                    <button class="btn"><strong>Log In</strong></button>
+                    <p>Forgot password?</p>
+                    <div class="line"></div>
+                    <button class="bt"><strong>Create New Account</strong></button>
+                </form>
+                <div class="pa"><strong>Create a Page </strong>for a celebrity, brand or business.</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
